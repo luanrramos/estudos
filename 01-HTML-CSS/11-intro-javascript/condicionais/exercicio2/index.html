@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2</title>
+</head>
+
+<body>
+  <input id="btn" onclick="somar()" type="button" value="Adicionar">
+  <div>0</div>
+  <script>
+    botao = document.querySelector("input#btn")
+    let tot = 0;
+    if (botao) {
+      function somar() {
+        let div = document.querySelector("div");
+        if (+div.innerText < 10) {
+          const total = +div.innerHTML + 1;
+          div.innerText = total
+        } else {
+          alert("MAIOR QUE 10")
+        }
+
+      }
+    }
+  </script>
+</body>
+
+</html>

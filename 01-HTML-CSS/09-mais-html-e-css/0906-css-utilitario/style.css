@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+p,
+a {
+  margin: 0px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.tamanho-primario {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 100px;
+}
+
+.tamanho-secundario {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 300px;
+}
+
+.padding-8-16 {
+  padding: 8px 16px;
+}
+.cor-azul {
+  color: #06e;
+}
+.background-azul {
+  background-color: #06e;
+  display: inline-block;
+}
+.cor-cinza {
+  color: #707070;
+}
+
+.cor-branca {
+  color: #fff;
+}
+
+.border {
+  border-radius: 3px;
+}
+.flex {
+  display: flex;
+  margin-top: 40px;
+  gap: 60px;
+}
+.no-style {
+  text-decoration: none;
+}
+
+.gap-20 {
+  margin-bottom: 60px;
+}
+.mb-1 {
+  margin-bottom: 20px;
+}
+.mb-2 {
+  margin-bottom: 40px;
+}

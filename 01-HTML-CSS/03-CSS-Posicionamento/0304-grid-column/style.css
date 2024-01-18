@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+h1{
+    font-size: 48px;
+}
+p{
+    font-size: 24px;
+    grid-column: 1 / 2
+}
+img{
+    max-width: 100%;
+    grid-column: 1 / -1;
+}
+
+span{
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+h1, p{
+    margin: 0px;
+}
+a{
+       font-size: 24px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: purple;
+}

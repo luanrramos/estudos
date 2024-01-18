@@ -1,0 +1,16 @@
+label,
+select,
+option,
+button {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+label,
+button {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}

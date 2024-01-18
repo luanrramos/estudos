@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Vamos Contar</h1>
+    <div>
+      <label>Início:</label>
+      <input type="number" id="txtini">
+
+      <br>
+      <label>Fim:</label>
+      <input type="number" id="txtfim">
+
+      <br>
+
+      <label>Passo:</label>
+      <input type="number" id="txtpas">
+
+      <br>
+
+      <button class="btn" onclick="clicar()">Verificar</button>
+
+      <div id="resp">
+
+      </div>
+    </div>
+
+    <script>
+      function clicar() {
+        var sini = document.querySelector("input#txtini");
+        var sfim = document.getElementById("txtfim");
+        var spasso = document.querySelector("input#txtpas");
+        var ini = Number(sini.value)
+        var fim = Number(sfim.value)
+        var passo = Number(spasso.value)
+        var resp = document.getElementById("resp")
+
+        console.log(ini, fim, passo)
+
+        if (ini == 0 || fim == 0) {
+          alert("[ERRO] Você não PREENCHEU TODOS OS CAMPOS!");
+        }
+        else {
+          if (passo == 0) {
+            alert("[ERRO] Passo inválido! Considerando passo 1");
+          }
+          resp.innerHTML = "<p> Contando: </p>"
+          for (var c = ini; c <= fim; c += passo) {
+            resp.innerHTML += (`${c} ➡️ `);
+          }
+          resp.innerHTML += "🏁"
+        }
+      }
+    </script>
+  </main>
+</body>
+
+</html>

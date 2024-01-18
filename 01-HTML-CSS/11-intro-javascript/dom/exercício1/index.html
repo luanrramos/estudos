@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercitando DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="area">Interaja</div>
+
+  <script>
+    var a = document.querySelector("div");
+    a.addEventListener("click", clicar);
+    a.addEventListener("mouseenter", entrou);
+    a.addEventListener("mouseout", saiu);
+    function clicar() {
+      a.innerText = ("Clicou");
+      a.style.backgroundColor = "red"
+    }
+
+    function entrou() {
+      a.innerText = "Entrou!"
+      a.style.backgroundColor = "green"
+
+    }
+
+    function saiu() {
+      a.innerText = "Saiu!"
+      a.style.backgroundColor = "green"
+
+    }
+  </script>
+</body>
+
+</html>

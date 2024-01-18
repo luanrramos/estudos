@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Practice</title>
+  <link rel="stylesheet" href="/style.css">
+  
+</head>
+
+<body>
+  
+    <div class = "header">
+      <div class = "home">
+        <span>Home</span>
+        <p>Some description</p>
+      </div>
+      
+      <div class = "products">
+        <span>Products</span>
+        <p>Some description</p>
+      </div>
+      
+      <div class = "contact">
+          <span>Contact</span>
+        <p>Some description</p>
+      </div>
+      
+    </div>
+<div class = "grid">
+    <div class = "aside">Aside</div>
+
+    <div class = "main">Main</div>
+
+    <div class = "footer">Footer</div>
+  </div>
+</body>
+
+</html>

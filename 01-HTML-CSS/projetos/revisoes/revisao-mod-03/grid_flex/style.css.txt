@@ -1,0 +1,48 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: grey;
+  height: 400px;
+}
+
+.header{
+  display: flex;
+  background-color: darkred;
+  flex-wrap: wrap;
+  place-content: space-evenly;
+}
+
+.header div{
+  display: grid;
+  place-items: start;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.aside{
+  background-color: green;
+  grid-row: 1 / span 2
+}
+
+.main{
+  grid-column: 2 / -1;
+  background-color: orange;
+  grid-row: 1 / span 2
+
+}
+
+.footer{
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 1;
+  background-color: blue;
+}
+
+
+p{
+  font-size: 12px;
+}

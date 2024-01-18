@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Verificador de Idade</h1>
+    <div>
+      <label for="">Ano de nascimento:</label>
+      <input type="number" name="txt1" id="txt1">
+
+      <br>
+      <label for="">Sexo:</label>
+      <input type="radio" name="rad" id="txt2">Masculino
+      <input type="radio" name="rad" id="txt3">Feminino
+      <br>
+
+      <button class="btn" onclick="clicar()">Verificar</button>
+
+      <div id="resp">
+
+      </div>
+    </div>
+
+    <script>
+      function clicar() {
+        var txtnasc = window.document.getElementById("txt1");
+        var nasc = Number(txtnasc.value);
+        var agora = new Date();
+        var anoAtual = agora.getFullYear();
+        var idade = (anoAtual - nasc);
+        var resp = document.getElementById("resp")
+        var sexo = ""
+        console.log(idade)
+        if (idade < 0 || idade > 130) {
+          alert("Idade incorreta")
+        }
+        else {
+          var frad = document.getElementsByName("rad")
+          console.log(frad)
+          if (frad[0].checked) {
+            sexo = "homem"
+            resp.innerHTML = (`Detectamos ${sexo} de ${idade} anos.`);
+          }
+          else if (frad[1].checked) {
+            sexo = "mulher"
+            resp.innerHTML = (`Detectamos ${sexo} de ${idade} anos.`);
+          }
+          else {
+            alert("Assinalar o SEXO")
+          }
+        }
+      }
+    </script>
+  </main>
+</body>
+
+</html>

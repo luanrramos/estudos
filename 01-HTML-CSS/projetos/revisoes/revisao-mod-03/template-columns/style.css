@@ -1,0 +1,15 @@
+body{
+    margin: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 20px;
+
+}
+.box{
+    margin: 0px;
+    padding: 10px 20px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}

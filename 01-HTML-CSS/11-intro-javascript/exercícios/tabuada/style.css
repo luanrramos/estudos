@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+main {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div {
+  background-color: white;
+  margin: 0px;
+  padding: 20px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+div input {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício</title>
+
+  <style>
+    .paragraf {
+      display: block;
+
+    }
+
+    .ativar {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Bikcraft</h1>
+
+  <input onclick="clicar()" type="button" value="Saiba Mais">
+  <p class="paragraf ativar">A bikcraft é uma loja renoameada em todo o planeta terra e conta com mais de 100 mil lojas.</p>
+
+  <script>
+    function clicar() {
+      var p = document.querySelector(".paragraf");
+      console.log(p)
+
+      if (p.classList.contains("ativar")) {
+        p.classList.remove("ativar");
+      }
+      else {
+        p.classList.add("ativar")
+      }
+    }
+  </script>
+</body>
+
+</html>

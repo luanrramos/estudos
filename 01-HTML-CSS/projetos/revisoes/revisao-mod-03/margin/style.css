@@ -1,0 +1,14 @@
+body{
+    margin: 0 auto;
+}
+.img img{
+    max-width: 400px;
+}
+.txt{
+    max-width: 400px;
+}
+main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,19 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.object img{
+    object-position: center right;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+@media(width <= 300px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+}

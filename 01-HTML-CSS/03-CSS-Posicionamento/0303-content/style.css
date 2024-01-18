@@ -1,0 +1,42 @@
+
+body{
+    font-family: Arial;
+
+}
+h1 {
+    text-align: center;
+}
+h2{
+    margin: 0px;
+}
+.item {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+}
+.teste{
+    display: grid;
+}
+
+.comprar{
+    padding: 10px 20px;
+    background-color: #a8f;
+    color: #103;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+.grid{
+    height: 800px;
+    gap: 20px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
+
+}

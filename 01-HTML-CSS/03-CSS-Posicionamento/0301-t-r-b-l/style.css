@@ -1,0 +1,8 @@
+*{
+    margin: 0px;
+}
+div{
+    background-color: grey;
+    border: 2px solid red;
+    padding: 30px 50px 10px 40px;
+}

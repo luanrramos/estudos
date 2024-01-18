@@ -1,0 +1,16 @@
+body {
+  background-color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h1 {
+  text-decoration: none;
+  color: black;
+}
+
+.classe {
+  color: pink;
+}
+
+#por_id {
+  color: white;
+}

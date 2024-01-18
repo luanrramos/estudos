@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2</title>
+</head>
+
+<body>
+  <h1>Somando Valores</h1>
+  <input type="number" name="txt1" id="txt1">
+  <input type="number" name="txt2" id="txt2">
+  <button id="btn">Somar</button>
+  <div id="res">Resultado</div>
+
+  <script>
+    var btn = window.document.getElementById("btn");
+    btn.addEventListener("click", somar);
+    function somar() {
+      var txt1 = window.document.getElementById("txt1");
+      var txt2 = window.document.getElementById("txt2");
+      var res = window.document.getElementById("res");
+
+      var n1 = Number(txt1.value);
+      var n2 = Number(txt2.value);
+
+      var soma = n1 + n2;
+
+      res.innerHTML = ("A soma entre " + n1 + " e " + n2 + " é igual a " + soma);
+    }
+
+
+
+  </script>
+</body>
+
+</html>

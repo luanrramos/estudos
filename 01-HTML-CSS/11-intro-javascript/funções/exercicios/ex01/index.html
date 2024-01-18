@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex 01</title>
+  <style>
+    main {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Escreva um script que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit ou vice-versa. Para cada opção, crie uma função. Crie uma terceira, que é um menu para o usuário escolher a opção desejada, onde esse menu chama a função de conversão correta. -->
+  <main>
+    <h1>Conversão de temperatura</h1>
+    <input name="rad" type="radio" id="rad1">Célsius para Fahrenheit
+    <br><input name="rad" type="radio" id="rad2">Fahrenheit para Célsius
+
+    <br><label>Converter valor:</label>
+    <input id="val" type="Number">
+    <br><input type="button" value="Calcular" onclick="clicar()">
+    <div id="resp">
+      Resposta:
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

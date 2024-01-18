@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    margin: 0px;
+}
+
+span{
+   color: #febe01;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #febe01;
+    color: #332200;
+    padding: 10px;
+    border-radius: 4px;
+}
+p{
+   color: #b2b2b2;
+}
+
+.bike, .carro{
+    background-color: #111;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 4px;
+}

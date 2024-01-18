@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando Eventos - 3</title>
+  <style>
+    div {
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: #111;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div></div>
+
+  <script>
+
+    function coordenadaMouse(event) {
+      const x = event.x;
+      const y = event.y;
+      const bola = window.document.querySelector("div");
+      bola.style.top = y + "px";
+      bola.style.left = x + "px";
+
+    }
+    window.addEventListener("mousemove", coordenadaMouse);
+  </script>
+</body>
+
+</html>

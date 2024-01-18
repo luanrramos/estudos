@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex 02</title>
+</head>
+
+<body>
+  <script>
+    //Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses três argumentos através de uma função. Seu script também deve fornecer a média dos três números, através de uma segunda função que chama a primeira.
+    // Código na apostila 
+
+    function func(x, y, z) {
+      return (x + y + z)
+    }
+
+    let soma = func(2, 2, 2)
+    console.log(soma)
+    function xmedia(m) {
+      return func(2, 2, 2) / m
+    }
+
+    let media = xmedia(3)
+    console.log(media)
+  </script>
+</body>
+
+</html>

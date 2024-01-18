@@ -1,0 +1,16 @@
+
+*{
+    margin: 0px;
+}
+/* Quero que a imagem obedeça o body {tag pai de img} */
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*  */
+span{
+    background-color: red;
+    display: block;
+    width: 100%;
+}

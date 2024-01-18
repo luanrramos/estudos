@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    gap: 10px;
+}
+
+#main{
+    background-color: #444444;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.cab{
+    background-color: red;
+    grid-column: 1 / -1;
+}
+
+.lat{
+    background-color: chartreuse;
+}
+
+.meio{
+    grid-column: 2 / span 2;
+    background-color: #2aa6cc;
+}
+.dc{
+    background-color: #352acc;
+}
+
+.db{
+    background-color: #cc2a96
+}
+.dcb{
+    display: grid;
+    grid-template-rows: minmax(auto, 200px) 1fr;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01</title>
+</head>
+
+<body>
+  <script>
+    //Função padrão do JS
+    // function sobrenome(sob) {
+    //   return ("Luan " + sob)
+    // }
+
+    //Forma mais usual de uma arrow function (Quando se há mais de 1 linha dentro da função)
+    // const sobrenome = sob => {
+    //   return "Luan " + sob;
+    // }
+    // console.log(sobrenome("Ricardo"));
+
+    //Arrow Function simplificada
+    // const sobrenome = (sob) => "Luan " + sob;
+    // console.log(sobrenome("Ricardo"));
+
+    //sob sem parênteses também funciona
+    // const sobrenome = sob => "Luan " + sob;
+    // console.log(sobrenome("Ricardo"));
+
+    //Armazenando tudo na variável nomeCompleto
+    const sobrenome = (sob) => {
+      const nomeCompleto = "Luan " + sob;
+      return nomeCompleto;
+    }
+    console.log(sobrenome("Ricardo"))
+  </script>
+</body>
+
+</html>

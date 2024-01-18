@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício - Idade para votar</title>
+</head>
+
+<body>
+  <h1>Idade para VOTAR</h1>
+
+  <label>Idade para votar: </label>
+  <input type="number" name="" id="txtidade">
+  <input type="button" value="Verificar" onclick="clicar()">
+
+  </div>
+  <div class="resp">
+    <script>
+
+      function clicar() {
+        var txti = document.querySelector("input#txtidade");
+        var idade = Number(txti.value);
+
+        r = document.querySelector("div.resp")
+        r.innerHTML = "<p> Você tem " + idade + " anos </p>"
+        if (idade < 16) {
+          r.innerHTML += "Não vota"
+        }
+        else if (idade < 18 || idade > 65) {
+          r.innerHTML += "Voto opcional"
+        }
+
+        else {
+          r.innerHTML += "Voto obrigatório"
+        }
+
+      }
+    </script>
+
+</body>
+
+</html>

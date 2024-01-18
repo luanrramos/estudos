@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>TABUADA</h1>
+    <div>
+      <label>Número:</label>
+      <input type="number" id="txtn">
+
+      <button class="btn" onclick="clicar()">Gerar Tabela</button>
+      <br>
+
+      <select size="10px" id="resp" name="resp" required="required" multiple>
+        <option value="">Digite o número acima</option>
+      </select>
+
+    </div>
+
+    <script>
+      function clicar() {
+        var sn = document.querySelector("input#txtn");
+        var numero = Number(sn.value)
+        var resp = document.getElementById("resp")
+
+        if (numero === 0) {
+          alert("[ERRO] Você não PREENCHEU TODOS OS CAMPOS!");
+        }
+        else {
+          resp.innerHTML = (``);
+          for (var c = 1; c <= 10; c++) {
+            resp.innerHTML += (`<option> ${numero} x ${c} = ${numero * c} </option> `);
+          }
+        }
+      }
+    </script>
+  </main>
+</body>
+
+</html>
